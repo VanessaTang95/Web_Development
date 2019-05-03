@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="chat.css" />
+  <title>Chat</title>
+</head>
+
+<body>
+  <h2>Chatting Room</h2>
+
+  <div id="chat-app">
+    <div class="display-panel">
+      <ul class="users">
+        <h4 class:"section-name">Users</h4>
+        <li>
+          <div class="user">
+            <span class="username">Amit</span>
+          </div>
+        </li>
+        <li>
+          <div class="user">
+            <span class="username">Bao</span>
+          </div>
+        </li>
+      </ul>
+    <hr>
+
+      <ol class="messages">
+        <li>
+          <div class="message1">
+            <div class="meta-info">
+              <div class="sender-info">
+                <img class="avatar" alt="user-avatar" src="images/avatar-amit.jpg" />
+                <span class="username">Amit</span>
+              </div>
+              <div class="message-info">
+                <span class="timestamp">18:45:32</span>
+              </div>
+            </div>
+            <p class="message-text">You up?</p>
+          </div>
+        </li>
+        <li>
+          <div class="message2">
+            <div class="meta-info">
+              <div class="sender-info">
+                <img class="avatar" alt="user-avatar" src="images/avatar-bao.jpg" />
+                <span class="username">Bao</span>
+              </div>
+              <div class="message-info">
+                <span class="timestamp">18:46:50</span>
+              </div>
+            </div>
+            <p class="message-text">Yeah, still working on this INFO6250 work, but I keep getting distracted by cat videos</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+    <div class="outgoing">
+      <form action="/chat">
+        <button type="submit">Send</button>
+        <input class="to-send" value="" placeholder="Enter message to send" required/>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

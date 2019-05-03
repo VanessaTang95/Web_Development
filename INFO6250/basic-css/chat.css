@@ -1,0 +1,41 @@
+body{
+  background-color: #b9e6d3;
+}
+#chat-app{
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+
+h2{
+  text-align: center;
+}
+
+
+
+.avatar{
+  border-style: solid;
+  border-radius: 50%;
+  width: 50px;
+}
+
+hr{
+  border:1px solid black;
+}
+
+.outgoing{
+  padding: 1% 5% 2% 20%;
+}
+
+form{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.to-send{
+  height: 50%;
+  width: 30%;
+  font-size: 18px;
+  font-family: sans-serif;
+}

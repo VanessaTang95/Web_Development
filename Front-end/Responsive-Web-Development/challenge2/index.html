@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>FreeCodeCamp challenge 2: survey form</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Sniglet" rel="stylesheet">
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<div id="main">
+  <div id="title-div">
+    <h1 id="title">NEU Events Survey</h1>
+  </div>
+  
+  <div id="survey-div">
+    <p id="description">Please fill out this survey to help us provide a better service!</p>
+    
+    <div id="survey-content">
+    <form id="survey-form" method="GET">
+      
+<div class="name-field">
+    <label id="name-label" for="name">*Name</label>
+      <input type="text" id="name" placeholder="Please enter your name" required>
+      </div>
+      
+<div class="email-field">
+  <label id="email-label" for="email">*Email</label>
+  <input type="email" id="email" placeholder="Please enter your email" required>
+      </div>
+      
+    <div class="age-field">
+      <label id="number-label" for="number">*Age</label>
+      <input type="number" id="number" min="0" max="150" placeholder="Age..." required>
+    </div>
+      
+    <div class="dropdown-field">
+      <label id="dropdown-label" for="dropdown">What is your gender?</label>
+      <select id="dropdown">
+        <option value="">--Please choose your Gender--:</option>
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+        <option value="other">I'd rather not to answer</option>
+      </select>
+    </div>
+    
+    <div class="radioBtn-field">
+      <p>Which campus are you current in?></p>
+      <div class="campus1">
+      <input type="radio" id="boston" name="campus" value="Boston" checked>
+      <label for="boston">Boston</label>
+      </div>
+      
+      <div class="campus2">
+        <input type="radio" id="seattle" 
+name="campus" value="Seattle" >
+        <label for="seattle">Seattle</label>  
+      </div>
+      
+      <div class="campus3">
+        <input type="radio" id="sv" 
+name="campus" value="SV" >
+        <label for="sv">Silicon Valley</label>  
+      </div>
+      
+      <div class="campus4">
+        <input type="radio" id="charlotte" 
+name="campus" value="Charlotte" >
+        <label for="charlotte">Charlotte</label>  
+      </div>
+      
+      <div class="campus5">
+        <input type="radio" id="london" 
+name="campus" value="London" >
+        <label for="london">London</label>  
+      </div>
+      
+    </div>
+      
+      <div class="checkbox-field>">
+        <p>Which event are you interested in?</p>
+        
+        <div class="check1">
+          <input type="checkbox" id="coffee" name="coffee" value="1">
+          <label for="coffee">Coffee Mugs Painting</label>
+        </div>
+        
+        <div class="check2">
+          <input type="checkbox" id="lazer" name="lazer" value="2">
+          <label for="lazer">Lazer Tag</label>
+        </div>
+        
+        <div class="check3">
+          <input type="checkbox" id="talent" name="talent" value="3">
+          <label for="talent">Talent Week</label>
+        </div>
+       
+        <div class="check4">
+          <input type="checkbox" id="company" name="company" value="4">
+          <label for="company">Company Tour</label>
+          
+        </div>
+ <div class="check5">
+          <input type="checkbox" id="else" name="else" value="5">
+          <label for="else">Others</label>
+        </div>       
+      </div>
+      
+      <div class="textArea-field">
+        <label for="suggestion" class="text-label">Please tell us what do you think we should improve:</label>
+        <textarea id="suggestion" name="suggestion" rows="5" cols="33">
+        </textarea>
+        
+      </div>
+      
+      <div class="submit-area">
+        <button class="submit-btn" type="submit" id="submit">Submit</button>
+      </div>
+    
+    </form>
+  </div>
+</div>
+</div>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
